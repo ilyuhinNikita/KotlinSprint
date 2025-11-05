@@ -1,15 +1,8 @@
 package org.example.lesson_1
 
-    fun main(){
+fun main() {
 
-       val numberOfOrders: Byte = 75
-       val thanksMessage: String = "Thank you for purchase!\nSee you soon!"
+    val numberOfOrders: Byte = 75
+    val thanksMessage: String = "Thank you for purchase!\nSee you soon!"
 
-//       println(numberOfOrders)
-       println(thanksMessage)
-
-    }
-
-
-
-
+}
