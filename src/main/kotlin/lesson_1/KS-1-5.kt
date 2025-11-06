@@ -1,13 +1,16 @@
 package org.example.lesson_1
 
+const val timeInterval = 60
 fun main() {
 
     val seconds = 6480
-    val minutes = (seconds / 60)
-    val hours = (minutes / 60)
-    val leftMinutes = (minutes % 60)
-    val leftSeconds = (seconds % 60)
-    val time = String.format("%02d:%02d:%02d;", hours, leftMinutes, leftSeconds)
+
+    val minutes = (seconds / timeInterval)
+    val hours = (minutes / timeInterval)
+    val leftMinutes = (minutes % timeInterval)
+    val leftSeconds = (seconds % timeInterval)
+
+    val time = "%02d:%02d:%02d;".format(hours, leftMinutes, leftSeconds)
     println(time)
 
 }
