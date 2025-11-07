@@ -18,7 +18,7 @@ fun main() {
         arrivalHour = arrivalHour + 1
     }
 
-    val arrivalTime = "$arrivalHour:$arrivalMinutes"
+    val arrivalTime = "%02d:%02d".format(arrivalHour, arrivalMinutes)
 
     println(arrivalTime)
 
