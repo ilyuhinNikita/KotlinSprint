@@ -1,6 +1,6 @@
 package org.example.lesson_2
 
-    const val TIME_CONST = 60
+const val TIME_CONST = 60
 
 fun main() {
 
@@ -15,13 +15,11 @@ fun main() {
     val arrivalMinutes = (departureMinutes + leftMinutes) % TIME_CONST
 
     if (allMinutes >= TIME_CONST) {
-        println(arrivalHour + 1)
+        arrivalHour = arrivalHour + 1
     }
 
+    val arrivalTime = "$arrivalHour:$arrivalMinutes"
 
-    println(travelHour)
-    println(arrivalHour)
-    println(leftMinutes)
-    println(allMinutes)
-    println(arrivalMinutes)
+    println(arrivalTime)
+
 }
