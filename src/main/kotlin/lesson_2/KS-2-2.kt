@@ -15,5 +15,4 @@ fun main() {
     println(allStaffSalary)
     println(averageSalary)
 
-
 }
